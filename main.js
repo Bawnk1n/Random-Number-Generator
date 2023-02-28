@@ -1,5 +1,5 @@
 const languages = ['Japanese', 'Arabic', 'Czech', 'Spanish'];
-const wordOrPhrase = ['Word', 'Phrase'];
+const wordOrPhrase = ['Word', 'phrase'];
 const Words = {
     japanese: ['こんにちは (Konnichiwa)', 'ありがとう (Arigatou)', 'すみません (Sumimasen)', 'おはようございます (Ohayou gozaimasu)', 'こんばんは (Konbanwa)', 'はい (Hai)', 'いいえ (Iie)', 'おいしい (Oishii)', 'かわいい (Kawaii)', 'さようなら (Sayounara)'  ],
     japaneseTranslation: ['Hello','Thank You', 'Excuse Me/I\'m Sorry', 'Good Morning', 'Good Evening', 'Yes', 'No', 'Delicious', 'Cute', 'Goodbye'  ],
@@ -20,3 +20,71 @@ const Phrases = {
     czech: ['Všechno nejlepší!', 'Jít si po svých', 'Mít hlavu plnou myšlenek', 'Hledat jehlu v kupce sena', 'Být v sedmém nebi', 'Být v háji', 'Vylézt na štěpána', 'Kdo hledá, najde', 'Co oči nevidí, to srdce nebolí', 'Mít po krk'],
     czechTranslation: ['"All the best!" and is used to wish someone well on their birthday or other special occasion.', '"To go one\'s own way" and is used to encourage someone to follow their own path in life.', '"To have a head full of thoughts" and is used to describe someone who is deep in thought or contemplation.', ' "To look for a needle in a haystack" and is used to describe a situation where something is very difficult to find.', '"To be in seventh heaven" and is used to describe a state of extreme happiness or bliss.', '"To be in the forest" and is used to describe a situation where things are not going well or have gone wrong.', '"To climb to the top of a flagpole" and is used to describe someone who is being overly ambitious or taking unnecessary risks.', '"Whoever seeks, shall find" and is used to encourage someone to keep looking or searching for something.', '"What the eyes don\'t see, the heart doesn\'t grieve over" and is used to suggest that ignorance can sometimes be bliss.', '"To have up to one\'s neck" and is used to describe a situation where someone is overwhelmed or has had enough.']
 }
+const randomLanguage = languages[Math.floor(Math.random() * 4)]
+const isWordOrPhrase = wordOrPhrase[Math.floor(Math.random() *2)]
+
+const generateString = () => {
+if (randomLanguage === 'Japanese') {
+    if (isWordOrPhrase === 'Word') {
+        const index = Math.floor(Math.random() * 10);
+        const japaneseWord = Words.japanese[index];
+        const japaneseTranslation = Words.japaneseTranslation[index];
+        return `The word "${japaneseWord}" means ${japaneseTranslation} in ${randomLanguage}`
+    }
+    if (isWordOrPhrase === 'phrase') {
+        const phraseIndex = Math.floor(Math.random() * 10);
+        const japanesePhrase = Phrases.japanese[phraseIndex];
+        const japanesePhraseTranslation = Phrases.japaneseTranslation[phraseIndex];
+        return `The ${randomLanguage} ${isWordOrPhrase} "${japanesePhrase}" means ${japanesePhraseTranslation}`
+    }
+}
+else if (randomLanguage === 'Arabic') {
+    if (isWordOrPhrase === 'Word') {
+        const index = Math.floor(Math.random() * 10);
+        const arabicWord = Words.arabic[index];
+        const arabicTranslation = Words.arabicTranslation[index];
+        return `The word "${arabicWord}" means ${arabicTranslation} in ${randomLanguage}`
+    }
+    if (isWordOrPhrase === 'phrase') {
+        const phraseIndex = Math.floor(Math.random() * 10);
+        const arabicPhrase = Phrases.arabic[phraseIndex];
+        const arabicPhraseTranslation = Phrases.arabicTranslation[phraseIndex];
+        return `The ${randomLanguage} ${isWordOrPhrase} "${arabicPhrase}" means ${arabicPhraseTranslation}`
+    }
+}
+else if (randomLanguage === 'Spanish') {
+    if (isWordOrPhrase === 'Word') {
+        const index = Math.floor(Math.random() * 10);
+        const spanishWord = Words.spanish[index];
+        const spanishTranslation = Words.spanishTranslation[index];
+        return `The word "${spanishWord}" means ${spanishTranslation} in ${randomLanguage}`
+    }
+    if (isWordOrPhrase === 'phrase') {
+        const phraseIndex = Math.floor(Math.random() * 10);
+        const spanishPhrase = Phrases.spanish[phraseIndex];
+        const spanishPhraseTranslation = Phrases.spanishTranslation[phraseIndex];
+        return `The ${randomLanguage} ${isWordOrPhrase} "${spanishPhrase}" means ${spanishPhraseTranslation}`
+    }
+}
+else if (randomLanguage === 'Czech') {
+    if (isWordOrPhrase === 'Word') {
+        const index = Math.floor(Math.random() * 10);
+        const czechWord = Words.czech[index];
+        const czechTranslation = Words.czechTranslation[index];
+        return `The word "${czechWord}" means ${czechTranslation} in ${randomLanguage}`
+    }
+    if (isWordOrPhrase === 'phrase') {
+        const phraseIndex = Math.floor(Math.random() * 10);
+        const czechPhrase = Phrases.czech[phraseIndex];
+        const czechPhraseTranslation = Phrases.czechTranslation[phraseIndex];
+        return `The ${randomLanguage} ${isWordOrPhrase} "${czechPhrase}" means ${czechPhraseTranslation}`
+    }
+}
+else {
+    return 'Big baby Boom-Boom';
+}
+}
+
+console.log(randomLanguage)
+console.log(isWordOrPhrase)
+console.log(generateString())
