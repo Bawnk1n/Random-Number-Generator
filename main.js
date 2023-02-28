@@ -83,8 +83,9 @@ else if (randomLanguage === 'Czech') {
 else {
     return 'Big baby Boom-Boom';
 }
+
 }
 
-console.log(randomLanguage)
-console.log(isWordOrPhrase)
+// console.log(randomLanguage)
+// console.log(isWordOrPhrase)
 console.log(generateString())
