@@ -20,8 +20,8 @@ const Phrases = {
     czech: ['Všechno nejlepší!', 'Jít si po svých', 'Mít hlavu plnou myšlenek', 'Hledat jehlu v kupce sena', 'Být v sedmém nebi', 'Být v háji', 'Vylézt na štěpána', 'Kdo hledá, najde', 'Co oči nevidí, to srdce nebolí', 'Mít po krk'],
     czechTranslation: ['"All the best!" and is used to wish someone well on their birthday or other special occasion.', '"To go one\'s own way" and is used to encourage someone to follow their own path in life.', '"To have a head full of thoughts" and is used to describe someone who is deep in thought or contemplation.', ' "To look for a needle in a haystack" and is used to describe a situation where something is very difficult to find.', '"To be in seventh heaven" and is used to describe a state of extreme happiness or bliss.', '"To be in the forest" and is used to describe a situation where things are not going well or have gone wrong.', '"To climb to the top of a flagpole" and is used to describe someone who is being overly ambitious or taking unnecessary risks.', '"Whoever seeks, shall find" and is used to encourage someone to keep looking or searching for something.', '"What the eyes don\'t see, the heart doesn\'t grieve over" and is used to suggest that ignorance can sometimes be bliss.', '"To have up to one\'s neck" and is used to describe a situation where someone is overwhelmed or has had enough.']
 }
-const randomLanguage = languages[Math.floor(Math.random() * 4)]
-const isWordOrPhrase = wordOrPhrase[Math.floor(Math.random() *2)]
+const randomLanguage = languages[Math.floor(Math.random() * languages.length)]
+const isWordOrPhrase = wordOrPhrase[Math.floor(Math.random() * wordOrPhrase.length)]
 
 const generateString = () => {
 if (randomLanguage === 'Japanese') {
@@ -79,9 +79,6 @@ else if (randomLanguage === 'Czech') {
         const czechPhraseTranslation = Phrases.czechTranslation[phraseIndex];
         return `The ${randomLanguage} phrase "${czechPhrase}" means ${czechPhraseTranslation}`
     }
-}
-else {
-    return 'Big baby Boom-Boom';
 }
 
 }
