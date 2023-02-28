@@ -1,5 +1,5 @@
 const languages = ['Japanese', 'Arabic', 'Czech', 'Spanish'];
-const wordOrPhrase = ['Word', 'phrase'];
+const wordOrPhrase = ['Word', 'Phrase'];
 const Words = {
     japanese: ['こんにちは (Konnichiwa)', 'ありがとう (Arigatou)', 'すみません (Sumimasen)', 'おはようございます (Ohayou gozaimasu)', 'こんばんは (Konbanwa)', 'はい (Hai)', 'いいえ (Iie)', 'おいしい (Oishii)', 'かわいい (Kawaii)', 'さようなら (Sayounara)'  ],
     japaneseTranslation: ['Hello','Thank You', 'Excuse Me/I\'m Sorry', 'Good Morning', 'Good Evening', 'Yes', 'No', 'Delicious', 'Cute', 'Goodbye'  ],
@@ -29,13 +29,13 @@ if (randomLanguage === 'Japanese') {
         const index = Math.floor(Math.random() * 10);
         const japaneseWord = Words.japanese[index];
         const japaneseTranslation = Words.japaneseTranslation[index];
-        return `The word "${japaneseWord}" means ${japaneseTranslation} in ${randomLanguage}`
+        return `The word "${japaneseWord}" means "${japaneseTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'phrase') {
+    if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const japanesePhrase = Phrases.japanese[phraseIndex];
         const japanesePhraseTranslation = Phrases.japaneseTranslation[phraseIndex];
-        return `The ${randomLanguage} ${isWordOrPhrase} "${japanesePhrase}" means ${japanesePhraseTranslation}`
+        return `The ${randomLanguage} phrase "${japanesePhrase}" means ${japanesePhraseTranslation}`
     }
 }
 else if (randomLanguage === 'Arabic') {
@@ -43,13 +43,13 @@ else if (randomLanguage === 'Arabic') {
         const index = Math.floor(Math.random() * 10);
         const arabicWord = Words.arabic[index];
         const arabicTranslation = Words.arabicTranslation[index];
-        return `The word "${arabicWord}" means ${arabicTranslation} in ${randomLanguage}`
+        return `The word "${arabicWord}" means "${arabicTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'phrase') {
+    if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const arabicPhrase = Phrases.arabic[phraseIndex];
         const arabicPhraseTranslation = Phrases.arabicTranslation[phraseIndex];
-        return `The ${randomLanguage} ${isWordOrPhrase} "${arabicPhrase}" means ${arabicPhraseTranslation}`
+        return `The ${randomLanguage} phrase "${arabicPhrase}" means ${arabicPhraseTranslation}`
     }
 }
 else if (randomLanguage === 'Spanish') {
@@ -57,13 +57,13 @@ else if (randomLanguage === 'Spanish') {
         const index = Math.floor(Math.random() * 10);
         const spanishWord = Words.spanish[index];
         const spanishTranslation = Words.spanishTranslation[index];
-        return `The word "${spanishWord}" means ${spanishTranslation} in ${randomLanguage}`
+        return `The word "${spanishWord}" means "${spanishTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'phrase') {
+    if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const spanishPhrase = Phrases.spanish[phraseIndex];
         const spanishPhraseTranslation = Phrases.spanishTranslation[phraseIndex];
-        return `The ${randomLanguage} ${isWordOrPhrase} "${spanishPhrase}" means ${spanishPhraseTranslation}`
+        return `The ${randomLanguage} phrase "${spanishPhrase}" means ${spanishPhraseTranslation}`
     }
 }
 else if (randomLanguage === 'Czech') {
@@ -71,13 +71,13 @@ else if (randomLanguage === 'Czech') {
         const index = Math.floor(Math.random() * 10);
         const czechWord = Words.czech[index];
         const czechTranslation = Words.czechTranslation[index];
-        return `The word "${czechWord}" means ${czechTranslation} in ${randomLanguage}`
+        return `The word "${czechWord}" means "${czechTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'phrase') {
+    if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const czechPhrase = Phrases.czech[phraseIndex];
         const czechPhraseTranslation = Phrases.czechTranslation[phraseIndex];
-        return `The ${randomLanguage} ${isWordOrPhrase} "${czechPhrase}" means ${czechPhraseTranslation}`
+        return `The ${randomLanguage} phrase "${czechPhrase}" means ${czechPhraseTranslation}`
     }
 }
 else {
