@@ -31,7 +31,7 @@ if (randomLanguage === 'Japanese') {
         const japaneseTranslation = Words.japaneseTranslation[index];
         return `The word "${japaneseWord}" means "${japaneseTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'Phrase') {
+    else if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const japanesePhrase = Phrases.japanese[phraseIndex];
         const japanesePhraseTranslation = Phrases.japaneseTranslation[phraseIndex];
@@ -45,7 +45,7 @@ else if (randomLanguage === 'Arabic') {
         const arabicTranslation = Words.arabicTranslation[index];
         return `The word "${arabicWord}" means "${arabicTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'Phrase') {
+    else if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const arabicPhrase = Phrases.arabic[phraseIndex];
         const arabicPhraseTranslation = Phrases.arabicTranslation[phraseIndex];
@@ -59,7 +59,7 @@ else if (randomLanguage === 'Spanish') {
         const spanishTranslation = Words.spanishTranslation[index];
         return `The word "${spanishWord}" means "${spanishTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'Phrase') {
+    else if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const spanishPhrase = Phrases.spanish[phraseIndex];
         const spanishPhraseTranslation = Phrases.spanishTranslation[phraseIndex];
@@ -73,7 +73,7 @@ else if (randomLanguage === 'Czech') {
         const czechTranslation = Words.czechTranslation[index];
         return `The word "${czechWord}" means "${czechTranslation}" in ${randomLanguage}`
     }
-    if (isWordOrPhrase === 'Phrase') {
+    else if (isWordOrPhrase === 'Phrase') {
         const phraseIndex = Math.floor(Math.random() * 10);
         const czechPhrase = Phrases.czech[phraseIndex];
         const czechPhraseTranslation = Phrases.czechTranslation[phraseIndex];
